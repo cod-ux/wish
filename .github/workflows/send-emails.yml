@@ -3,11 +3,11 @@ name: Send Daily Hope Emails
 
 'on':
   schedule:
-    # 10:20 AM UTC = 11:20 AM BST (London summer time) - TEMPORARY TEST TIME
-    - cron: '20 10 * * *'
-    # 10:20 PM UTC = 11:20 PM BST (London summer time) - TEMPORARY TEST TIME
-    - cron: '20 22 * * *'
-    # Note: During GMT (winter), these times will be 11:20 AM/PM GMT
+    # 10:09 AM UTC = 11:09 AM BST (London summer time) - ORIGINAL TIME
+    - cron: '9 10 * * *'
+    # 22:40 UTC = 11:40 PM BST (London summer time) - TEST TIME
+    - cron: '40 22 * * *'
+    # Note: During GMT (winter), these times will be 11:09 AM/11:40 PM GMT
     # TODO: Change back to 11:09 AM/PM after testing
 
   workflow_dispatch:  # Allow manual triggering
